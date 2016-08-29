@@ -27,7 +27,7 @@ app.post('/result',upload.single('userfile'),function(req,res){
 app.use(function(req,res){
 	res.send("404 not found");
 });
-var port=process.env.port || 8080;
+var port=process.env.PORT || 8080;
 app.listen(port,function () {
 	console.log("listening to port "+port);
 });
